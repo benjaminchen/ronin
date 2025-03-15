@@ -1,0 +1,18 @@
+.page-nav {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.page-nav > span,
+.page-nav > a {
+  margin: 0 10px;
+  color: #000;
+}
+.page-nav > .current {
+  color: #d3d3d3;
+}
+.page-nav > a:hover {
+  color: #212529;
+}

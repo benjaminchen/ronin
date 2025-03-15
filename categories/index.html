@@ -68,46 +68,49 @@
 
                     
                     <nav class="row border-bottom font-english">
-                        <div class="col-3 col-md-1 pb-3 me-3 text-center border-bottom border-dark text-dark">
-                            <a href="http://ronin.bekateam.com" class="text-decoration-none text-secondary text-dark">Home</a>
+                        <div class="col-1 pb-3 text-dark">
+                            <p class="m-0">Categories</p>
                         </div>
-                        
                     </nav>
                     
                 </div>
 
                 <main>
                     
-                        
-    
-        <div class="row mb-4 post-container">
-            <div class="col-8 col-md-9 d-block ps-0 pe-3">
-                <h2 class="text-primary post-title">
-                    <a href="2025/03/15/first-post/" class="text-decoration-none text-dark">
-                        開站文
-                    </a>
+                        <div class="categories-page">
+    <ul class="category-list">
+        
+            <li class="category-item">
+                <h2 class="category-title" onclick="toggleCategory('閒聊')">
+                    <span class="toggle-sign"><i class="bi bi-plus-square"></i></span>
+                    閒聊 (1)
                 </h2>
-                <p class="text-secondary post-excerpt d-none d-md-block">
-                    搞了好久(大約一星期)，終於把這個小站給架好了只能說現在的 AI 實在越來越強大了已經可以對話式的寫 code，除錯讓原本很多複雜的東西簡化了不要太多浪人以往的經驗，要在工作之餘學會 hexo the...
-                </p>
-                <!-- 手機版 post -->
-                <p class="text-secondary post-excerpt d-block d-md-none">
-                    搞了好久(大約一星期)，終於把這個小站給...
-                </p>
-                <p class="text-secondary post-date">
-                    2025年3月15日
-                </p>
-            </div>
-            <div class="col-4 col-md-3">
-                <img src="/images/default-cover.jpg" alt="開站文" class="img-fluid rounded" style="width: 100%; height: auto; overflow: hidden; display: block; margin: 0 auto;">
-            </div>
-        </div>
-    
+                <ul class="post-list" id="category-閒聊" style="display: none;">
+                    
+                        <li>
+                            <a href="/2025/03/15/first-post/">
+                                開站文
+                                <span>2025-03-15</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+    </ul>
+</div>
 
+<script>
+    function toggleCategory(categoryName) {
+        const postList = document.getElementById("category-" + categoryName);
+        const toggleSign = postList.previousElementSibling.querySelector(".toggle-sign i");
+        const isOpen = postList.style.display === "block"; // Check if currently open
 
-
-
-
+        postList.style.display = isOpen ? "none" : "block"; // Toggle display
+        toggleSign.classList.toggle("bi-plus-square", isOpen); // Update icon based on open/close state
+        toggleSign.classList.toggle("bi-dash-square", !isOpen);
+    }
+</script>
                     
                 </main>
             </div>
