@@ -3,6 +3,7 @@ title: 開站文
 date: 2025-03-15 16:48:15
 tags:
 categories: 閒聊
+image: https://live.staticflickr.com/65535/54389457375_fa95c910c6_c.jpg
 ---
 
 搞了好久(大約一星期)，終於把這個小站給架好了
