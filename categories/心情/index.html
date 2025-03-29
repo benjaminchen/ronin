@@ -87,57 +87,41 @@
 
                 <main>
                     
-                        <div class="categories-page">
-    <ul class="category-list">
+                        <div class="fade-in-down-animation">
+    <div class="archives-container">
+        <div class="archives-timeline border-box">
+            
+<div class="archive-list-container">
+    <div class="posts-collapse">
+        <div class="archive-counter">
+            <div class="dot">
+                <span class="archive-counter-text">共計 1 篇文章</span>
+            </div>
+        </div>
+
         
-            <li class="category-item">
-                <h2 class="category-title" onclick="toggleCategory('心情')">
-                    <span class="toggle-sign"><i class="bi bi-plus-square"></i></span>
-                    心情 (1)
-                </h2>
-                <ul class="post-list" id="category-心情" style="display: none;">
-                    
-                        <li>
-                            <a href="/2025/03/28/age-fourty/">
-                                四十不惑之年 ❓❓❓
-                                <span>2025-03-28</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </li>
+            <div class="collection-title">
+                <div class="dot">
+                    <span class="archive-year">2025</span>
+                </div>
+            </div>
+
+            
+                <div class="archive-post">
+                    <div class="dot display-inline">
+                        <span class="archive-post-date">03-28</span>
+                        <a class="archive-post-title" href="/2025/03/28/age-fourty/">四十不惑之年 ❓❓❓</a>
+                    </div>
+                </div>
+            
         
-            <li class="category-item">
-                <h2 class="category-title" onclick="toggleCategory('閒聊')">
-                    <span class="toggle-sign"><i class="bi bi-plus-square"></i></span>
-                    閒聊 (1)
-                </h2>
-                <ul class="post-list" id="category-閒聊" style="display: none;">
-                    
-                        <li>
-                            <a href="/2025/03/15/first-post/">
-                                開站文
-                                <span>2025-03-15</span>
-                            </a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-    </ul>
+    </div>
 </div>
+        </div>
+    </div>
+    
 
-<script>
-    function toggleCategory(categoryName) {
-        const postList = document.getElementById("category-" + categoryName);
-        const toggleSign = postList.previousElementSibling.querySelector(".toggle-sign i");
-        const isOpen = postList.style.display === "block"; // Check if currently open
-
-        postList.style.display = isOpen ? "none" : "block"; // Toggle display
-        toggleSign.classList.toggle("bi-plus-square", isOpen); // Update icon based on open/close state
-        toggleSign.classList.toggle("bi-dash-square", !isOpen);
-    }
-</script>
+</div>
                     
                 </main>
             </div>
