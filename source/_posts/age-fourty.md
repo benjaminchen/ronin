@@ -3,6 +3,7 @@ title: 四十不惑之年 ❓❓❓
 date: 2025-03-28 22:20:42
 tags:
 categories: 心情
+image: https://live.staticflickr.com/65535/54418664887_58f6fc4dbf_c.jpg
 ---
 
 【論語．為政】
